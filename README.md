@@ -59,7 +59,7 @@ Homebrew formulae do not have license metadata. For this to be included in Homeb
 Expected outcome: A formula `license` DSL is added and used in homebrew-core. `brew audit` verifies this DSL is correct.
 
 ### Automatically create pull requests based on Homebrew/livecheck
-#### Skills Required: Ruby, Homebrew usage, 
+#### Skills Required: Ruby, Homebrew usage, Regex
 #### Mentor: @SMillerNL, @MikeMcQuaid
 #### Difficulty: Medium
 Homebrew/livecheck provides various automated ways of detecting formulae updates. A `livecheck` DSL should be added to formulae and migrated from Homebrew/livecheck and `brew livecheck` use this new data. If time permits, a separate application should be built to make use of these checks, verify that the results seem correct and open a pull request with relevant metadata on Homebrew/homebrew-core.
