@@ -70,7 +70,7 @@ Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck
 ### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations on Linuxbrew
 #### Skills Required: Ruby, Homebrew usage, some knowledge of binary formats
 #### Mentor: @woodruffw
-#### Difficulty: Medium
+#### Difficulty: High
 
 Linuxbrew currently uses the GNU `readelf` and `patchelf` utilities to perform ELF introspection and relocation. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Linuxbrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
 
