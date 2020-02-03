@@ -16,6 +16,7 @@ Homebrew is actively seeking to diversify our contributors and especially welcom
 Please read and apply via https://summerofcode.withgoogle.com/get-started/.
 
 ## Mentors
+
 Mentorship happens privately on our Homebrew maintainer's Slack and publicly on GitHub pull requests. Each student and project will be assigned a mentor but all students will work with all mentors.
 
 Check out GitHub's blog post on how to run GSoC on GitHub for the standards expected from maintainers and students:
@@ -65,6 +66,15 @@ Expected outcome: A formula `license` DSL is added and used in homebrew-core. `b
 Homebrew/livecheck provides various automated ways of detecting formulae updates. A `livecheck` DSL should be added to formulae and migrated from Homebrew/livecheck and `brew livecheck` use this new data. If time permits, a separate application should be built to make use of these checks, verify that the results seem correct and open a pull request with relevant metadata on Homebrew/homebrew-core.
 
 Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck` from homebrew-core. If time permits, a seperate application should consume this data.
+
+### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations in Homebrew on Linux
+#### Skills Required: Ruby, Homebrew usage, some knowledge of binary formats
+#### Mentor: @woodruffw
+#### Difficulty: High
+
+As part of the installation process, Homebrew rewrites its compiled binaries to correctly reference their install prefix and Homebrew-managed dependencies. Homebrew on Linux currently uses the GNU `readelf` and `patchelf` utilities to perform that introspection and relocation on ELF binaries. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Homebrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
+
+Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
 
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
