@@ -67,14 +67,14 @@ Homebrew/livecheck provides various automated ways of detecting formulae updates
 
 Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck` from homebrew-core. If time permits, a seperate application should consume this data.
 
-### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations on Linuxbrew
+### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations in Homebrew on Linux
 #### Skills Required: Ruby, Homebrew usage, some knowledge of binary formats
 #### Mentor: @woodruffw
 #### Difficulty: High
 
-Linuxbrew currently uses the GNU `readelf` and `patchelf` utilities to perform ELF introspection and relocation. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Linuxbrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
+Homebrew on Linux currently uses the GNU `readelf` and `patchelf` utilities to perform ELF introspection and relocation. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Homebrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
 
-Expected outcome: A refactoring of Linuxbrew's `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
+Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
 
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
