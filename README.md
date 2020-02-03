@@ -84,5 +84,7 @@ Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://git
 
 Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata.
 
+Stretch goal: Major portions of Homebrew's core code has type data.
+
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
