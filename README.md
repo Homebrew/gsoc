@@ -23,9 +23,9 @@ https://github.com/blog/2312-how-to-run-a-google-summer-of-code-project-on-githu
 
 ## Pass Requirements
 
-- To be accepted one trivial pull request for your project to Homebrew will need to be merged (this can be far prior to the program)
-- To pass the mid-term assessment one non-trivial pull request for your project to Homebrew will need to be merged
-- To pass the final assessment more than one non-trivial pull request for your project to Homebrew will need to be reviewed and merged
+- To be accepted, one trivial pull request for your project to Homebrew will need to be merged (this can be far prior to the program).
+- To pass the mid-term assessment, one non-trivial pull request for your project to Homebrew will need to be merged.
+- To pass the final assessment, more than one non-trivial pull request for your project to Homebrew will need to be reviewed and merged.
 
 ## Technologies Used and Requirements
 
