@@ -78,7 +78,7 @@ Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relo
 
 ### Add support for type checking using Sorbet
 #### Skills Required: Ruby, Homebrew usage
-#### Mentor: @mistydemeo
+#### Mentor: @mistydemeo, @issyl0
 #### Difficulty: Medium
 Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://github.com/sorbet/sorbet) project provides a way to enable static type checking in Ruby, which would increase confidence in the quality of its code and provide a useful way to catch subtle bugs. This project would perform an initial setup of Sorbet for Homebrew and work on adding type data to its code.
 
