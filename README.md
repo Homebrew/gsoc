@@ -64,5 +64,9 @@ The formulae.brew.sh website is a static GitHub Pages site. Due to the underlyin
 
 Homebrew/livecheck provides various automated ways of detecting formulae updates. A separate application should be built to make use of these checks, verify that the results seem correct and open a pull request with relevant metadata on Homebrew/homebrew-core.
 
+### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations on Linuxbrew
+
+Linuxbrew currently uses the GNU `readelf` and `patchelf` utilities to perform ELF introspection and relocation. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Linuxbrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
+
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
