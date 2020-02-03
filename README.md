@@ -16,6 +16,7 @@ Homebrew is actively seeking to diversify our contributors and especially welcom
 Please read and apply via https://summerofcode.withgoogle.com/get-started/.
 
 ## Mentors
+- [@mistydemeo](https://github.com/mistydemeo) (mistydemeo@gmail.com)
 - [@MikeMcQuaid](https://github.com/mikemcquaid) (mike@mikemcquaid.com)
 - [@gauthamgoli](https://github.com/gauthamgoli) (goligautham@gmail.com)
 
