@@ -72,7 +72,7 @@ Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck
 #### Mentor: @woodruffw
 #### Difficulty: High
 
-Homebrew on Linux currently uses the GNU `readelf` and `patchelf` utilities to perform ELF introspection and relocation. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Homebrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
+As part of the installation process, Homebrew rewrites its compiled binaries to correctly reference their install prefix and Homebrew-managed dependencies. Homebrew on Linux currently uses the GNU `readelf` and `patchelf` utilities to perform that introspection and relocation on ELF binaries. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Homebrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
 
 Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
 
