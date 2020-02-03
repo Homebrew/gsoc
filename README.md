@@ -16,7 +16,7 @@ Homebrew is actively seeking to diversify our contributors and especially welcom
 Please read and apply via https://summerofcode.withgoogle.com/get-started/.
 
 ## Mentors
-Mentorship happens privately on our Homebrew maintainer's Slack and publicly on GitHub pull requests. Each student and project will be assigned a mentor but all students will work with all mentors.
+Mentorship happens privately on our Homebrew maintainers' Slack and publicly on GitHub pull requests. Each student and project will be assigned a mentor but all students will work with all mentors.
 
 Check out GitHub's blog post on how to run GSoC on GitHub for the standards expected from maintainers and students:
 https://github.com/blog/2312-how-to-run-a-google-summer-of-code-project-on-github
