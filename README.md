@@ -82,7 +82,7 @@ Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relo
 #### Difficulty: Medium
 Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://github.com/sorbet/sorbet) project provides a way to enable static type checking in Ruby, which would increase confidence in the quality of its code and provide a useful way to catch subtle bugs. This project would perform an initial setup of Sorbet for Homebrew and work on adding type data to its code.
 
-Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata.
+Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata. Documentation has been written about adding types.
 
 Stretch goal: Major portions of Homebrew's core code has type data.
 
