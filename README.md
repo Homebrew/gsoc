@@ -19,6 +19,7 @@ Please read and apply via https://summerofcode.withgoogle.com/get-started/.
 - [@mistydemeo](https://github.com/mistydemeo) (mistydemeo@gmail.com)
 - [@MikeMcQuaid](https://github.com/mikemcquaid) (mike@mikemcquaid.com)
 - [@gauthamgoli](https://github.com/gauthamgoli) (goligautham@gmail.com)
+- [@woodruffw](https://github.com/woodruffw) (william@yossarian.net)
 
 Mentorship happens privately on our Homebrew maintainer's Slack and publicly on GitHub pull requests. Each student and project will be assigned a mentor but all students will work with all mentors.
 
