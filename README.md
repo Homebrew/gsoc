@@ -5,10 +5,10 @@ Homebrew is a package manager for macOS and Linux written in Ruby and Bash.
 
 In your application tell us:
 
-1. Who you are: your name and how we contact you (e.g. email)
-2. What idea are you proposing: which of our ideas is it or describe in detail if it's your own
-3. How will you implement it: provide a detailed work timeline that breaks the project into one or two week milestones
-4. Why you: link to a previous Homebrew pull request you've submitted (this is a requirement to be accepted)
+1. Who you are: your name and how we contact you (e.g. email).
+2. What idea are you proposing: the name of the idea you've chosen, or a full description of your own project idea.
+3. How will you implement it: provide a detailed work timeline that breaks the project into one or two week milestones.
+4. Why you: link to a previous Homebrew pull request you've submitted (this is a requirement to be accepted).
 
 Homebrew is actively seeking to diversify our contributors and especially welcome applications from women from all backgrounds and people of colour.
 
