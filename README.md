@@ -67,6 +67,16 @@ Homebrew/livecheck provides various automated ways of detecting formulae updates
 
 Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck` from homebrew-core. If time permits, a seperate application should consume this data.
 
+### Improve Homebrew tagging and release process
+#### Skills Required: Github Actions, Homebrew usage, Regex
+#### Mentor: @chenrui333
+#### Difficulty: Medium
+The common operations for homebrew formula are involved with new formula or improving the changes, right now the maintainers have to manually tag the formula as new formula,
+or suggest changes like improving the test block. So is the problem with formula release process, maintainer has to use their bintray token to manually merge each PR and release them into bintray.
+This project is trying to explore either Github Actions or Probot app to automate many of these processes and improve the contributor and maintainer experience.
+
+Expected outcome: Two bots, one bot for tagging, one bot for formula release.
+
 ### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations in Homebrew on Linux
 #### Skills Required: Ruby, Homebrew usage, some knowledge of binary formats
 #### Mentor: @woodruffw
