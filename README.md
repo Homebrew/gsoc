@@ -38,11 +38,11 @@ These are suggestions that would make good Google Summer of Code projects. Feel 
 ### Modernize haskell formulae build experience
 #### Skills Required: Haskell, Cabal, Stack
 #### Mentor: @chenrui333
-#### Difficulty: Medium
-Historically, Haskell formulae was built with Cabal, unfortunately, the build suffers the reproducibility issue, also with the time passing, [Most Haskell formulas do not build from source anymore](https://github.com/Homebrew/homebrew-core/issues/48604), this project is trying to Homebrew's Haskell formulae build experience.
-If time permits, we might also want to spread the love and help more upstream repos to adopt the modern build system.
+#### Difficulty: Hard
+Historically, Homebrew built packages written in Haskell using Cabal. Over time, this has suffered from reproducibility issues, and [many packages no longer build from source](https://github.com/Homebrew/homebrew-core/issues/48604). This project will improve Homebrew's Haskell formulae build experience by switching to a Stack-based workflow.
 
-Expected outcome: Move to Stack-based build system for haskell formulae.
+Expected outcome: Move to a Stack-based build system for Haskell formulae.
+Stretch goal: Help an upstream project to adopt the modern build system.
 
 ### Optimise formula and resource download ordering
 #### Skills Required: Ruby, Homebrew usage, basic HTTP download knowledge
