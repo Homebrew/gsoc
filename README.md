@@ -76,5 +76,15 @@ As part of the installation process, Homebrew rewrites its compiled binaries to 
 
 Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
 
+### Add support for type checking using Sorbet
+#### Skills Required: Ruby, Homebrew usage, statically typed programming languages
+#### Mentor: @mistydemeo, @issyl0
+#### Difficulty: Medium
+Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://github.com/sorbet/sorbet) project provides a way to enable static type checking in Ruby, which would increase confidence in the quality of its code and provide a useful way to catch subtle bugs. This project would perform an initial setup of Sorbet for Homebrew and work on adding type data to its code.
+
+Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata. Documentation has been written about adding types.
+
+Stretch goal: Major portions of Homebrew's core code has type data.
+
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
