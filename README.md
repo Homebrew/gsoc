@@ -35,6 +35,40 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 ## 2020 Ideas
 These are suggestions that would make good Google Summer of Code projects. Feel free to open an issue if you wish to discuss or propose your own idea.
 
+### Improve integration with Homebrew Cask
+#### Skills Required: Ruby, Homebrew usage, Homebrew Cask usage, usability-focused thinking
+#### Mentor: @MikeMcQuaid
+#### Difficulty: Easy
+Although Homebrew and Homebrew Cask have been merged the two projects are not fully integrated. For example, `brew info` and `brew cask info` are separate commands that produce different output. Ideally all of Homebrew's commands that reference a formula would also be able to reference a cask and produce helpful output (although `brew install` and `brew cask install` should remain separate). This will make it easier for users to have casks recommended when there is not a formula (and vice-versa).
+
+Expected outcome: several new `brew` commands should produce helpful output directing the user to casks or just show cask information.
+
+### Add license metadata to Homebrew/homebrew-core formulae
+#### Skills Required: Ruby, Homebrew usage, basic understanding of OSS licensing
+#### Mentor: @MikeMcQuaid
+#### Difficulty: Medium
+Homebrew formulae do not have license metadata. For this to be included in Homebrew a `license` DSL would need to be added to Homebrew/brew and all relevant metadata would need to be added for Homebrew/homebrew-core formulae before they could be merged. Additionally, automated tests in `brew audit` should be added to verify this metadata matches what GitHub detects.
+
+Expected outcome: A formula `license` DSL is added and used in homebrew-core. `brew audit` verifies this DSL is correct.
+
+### Add support for type checking using Sorbet
+#### Skills Required: Ruby, Homebrew usage, statically typed programming languages
+#### Mentor: @mistydemeo, @issyl0
+#### Difficulty: Medium
+Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://github.com/sorbet/sorbet) project provides a way to enable static type checking in Ruby, which would increase confidence in the quality of its code and provide a useful way to catch subtle bugs. This project would perform an initial setup of Sorbet for Homebrew and work on adding type data to its code.
+
+Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata. Documentation has been written about adding types.
+
+Stretch goal: Major portions of Homebrew's core code has type data.
+
+### Automatically create pull requests based on Homebrew/livecheck
+#### Skills Required: Ruby, Homebrew usage, Regex
+#### Mentor: @SMillerNL, @MikeMcQuaid
+#### Difficulty: Medium
+Homebrew/livecheck provides various automated ways of detecting formulae updates. A `livecheck` DSL should be added to formulae and migrated from Homebrew/livecheck and `brew livecheck` use this new data. If time permits, a separate application should be built to make use of these checks, verify that the results seem correct and open a pull request with relevant metadata on Homebrew/homebrew-core.
+
+Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck` from homebrew-core. If time permits, a seperate application should consume this data.
+
 ### Modernize haskell formulae build experience
 #### Skills Required: Haskell, Cabal, Stack
 #### Mentor: @chenrui333
@@ -52,30 +86,6 @@ When `brew upgrade`ing or `brew install`ing multiple formulae with multiple `res
 
 Expected outcome: `brew upgrade` and `brew install` do all their downloads before attempting any installations.
 
-### Improve integration with Homebrew Cask
-#### Skills Required: Ruby, Homebrew usage, Homebrew Cask usage, usability-focused thinking
-#### Mentor: @MikeMcQuaid
-#### Difficulty: Easy
-Although Homebrew and Homebrew Cask have been merged the two projects are not fully integrated. For example, `brew info` and `brew cask info` are separate commands that produce different output. Ideally all of Homebrew's commands that reference a formula would also be able to reference a cask and produce helpful output (although `brew install` and `brew cask install` should remain separate). This will make it easier for users to have casks recommended when there is not a formula (and vice-versa).
-
-Expected outcome: several new `brew` commands should produce helpful output directing the user to casks or just show cask information.
-
-### Add license metadata to Homebrew/homebrew-core formulae
-#### Skills Required: Ruby, Homebrew usage, basic understanding of OSS licensing
-#### Mentor: @MikeMcQuaid
-#### Difficulty: Medium
-Homebrew formulae do not have license metadata. For this to be included in Homebrew a `license` DSL would need to be added to Homebrew/brew and all relevant metadata would need to be added for Homebrew/homebrew-core formulae before they could be merged. Additionally, automated tests in `brew audit` should be added to verify this metadata matches what GitHub detects.
-
-Expected outcome: A formula `license` DSL is added and used in homebrew-core. `brew audit` verifies this DSL is correct.
-
-### Automatically create pull requests based on Homebrew/livecheck
-#### Skills Required: Ruby, Homebrew usage, Regex
-#### Mentor: @SMillerNL, @MikeMcQuaid
-#### Difficulty: Medium
-Homebrew/livecheck provides various automated ways of detecting formulae updates. A `livecheck` DSL should be added to formulae and migrated from Homebrew/livecheck and `brew livecheck` use this new data. If time permits, a separate application should be built to make use of these checks, verify that the results seem correct and open a pull request with relevant metadata on Homebrew/homebrew-core.
-
-Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck` from homebrew-core. If time permits, a seperate application should consume this data.
-
 ### Use [rbelftools](https://github.com/david942j/rbelftools) and [patchelf.rb](https://github.com/david942j/patchelf.rb) to perform binary relocations in Homebrew on Linux
 #### Skills Required: Ruby, Homebrew usage, some knowledge of binary formats
 #### Mentor: @woodruffw
@@ -84,16 +94,6 @@ Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck
 As part of the installation process, Homebrew rewrites its compiled binaries to correctly reference their install prefix and Homebrew-managed dependencies. Homebrew on Linux currently uses the GNU `readelf` and `patchelf` utilities to perform that introspection and relocation on ELF binaries. These tools are buggy and integrate poorly, and can be replaced with the Ruby alternatives linked above. This will reduce the number and difficulty of resolving bugs in ELF relocation, as well as improve Homebrew's performance by reducing both external subprocesses and redundant I/O on ELF binaries.
 
 Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
-
-### Add support for type checking using Sorbet
-#### Skills Required: Ruby, Homebrew usage, statically typed programming languages
-#### Mentor: @mistydemeo, @issyl0
-#### Difficulty: Medium
-Homebrew is written in Ruby, which uses dynamic typing. The [Sorbet](https://github.com/sorbet/sorbet) project provides a way to enable static type checking in Ruby, which would increase confidence in the quality of its code and provide a useful way to catch subtle bugs. This project would perform an initial setup of Sorbet for Homebrew and work on adding type data to its code.
-
-Expected outcome: Sorbet is installed in Homebrew's development environment, and key parts of the application have type metadata. Documentation has been written about adding types.
-
-Stretch goal: Major portions of Homebrew's core code has type data.
 
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
