@@ -111,7 +111,7 @@ Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relo
 #### Mentor: @zachauten
 #### Difficulty: Medium
 
-Write a suite of automated performance tests that can run against brew’s code base to generate benchmarks, and identify performance bottlenecks. These tests could also be added to brew’s CI using Github Actions, o detect regressions in performance when new code is committed.
+Write a suite of automated performance tests that can run against brew’s code base to generate benchmarks, and identify performance bottlenecks. These tests could also be added to brew’s CI using GitHub Actions, o detect regressions in performance when new code is committed.
 
 Expected outcome: A suite of performance tests for brew.
 
