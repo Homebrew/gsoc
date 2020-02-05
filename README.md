@@ -76,17 +76,6 @@ Expected outcome: A formula `livecheck` DSL is added and used by `brew livecheck
 
 ----
 
-### Modernize haskell formulae build experience
-#### Skills Required: Haskell, Cabal, Stack
-#### Mentor: @chenrui333
-#### Difficulty: Hard
-Historically, Homebrew built packages written in Haskell using Cabal. Over time, this has suffered from reproducibility issues, and [many packages no longer build from source](https://github.com/Homebrew/homebrew-core/issues/48604). This project will improve Homebrew's Haskell formulae build experience by switching to a Stack-based workflow.
-
-Expected outcome: Move to a Stack-based build system for Haskell formulae.
-Stretch goal: Help an upstream project to adopt the modern build system.
-
-----
-
 ### Optimise formula and resource download ordering
 #### Skills Required: Ruby, Homebrew usage, basic HTTP download knowledge
 #### Mentor: @MikeMcQuaid
