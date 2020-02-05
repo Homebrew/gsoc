@@ -106,6 +106,16 @@ As part of the installation process, Homebrew rewrites its compiled binaries to 
 Expected outcome: A refactoring of Homebrew's Linux-specific `keg` and `keg_relocate` interfaces to use `rbelftools` and `patchelf.rb` instead of shelling out to the GNU utilities.
 
 ----
+### Automated Performance tests for brew
+#### Skills Required: Ruby, Homebrew usage, Performance Testing, Tracing tools.
+#### Mentor: @zachauten
+#### Difficulty: Medium
+
+Write a suite of automated performance tests that can run against brew’s code base to generate benchmarks, and identify performance bottlenecks. These tests could also be added to brew’s CI using Github Actions, o detect regressions in performance when new code is committed.
+
+Expected outcome: A suite of performance tests for brew.
+
+____
 
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
