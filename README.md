@@ -36,7 +36,7 @@ These are suggestions that would make good Google Summer of Code projects. Feel 
 
 ### Improve integration with Homebrew Cask
 #### Skills Required: Ruby, Homebrew usage, Homebrew Cask usage, usability-focused thinking
-#### Mentor: @MikeMcQuaid
+#### Mentor: @MikeMcQuaid, @chenrui333
 #### Difficulty: Easy
 Although Homebrew and Homebrew Cask have been merged the two projects are not fully integrated. For example, `brew info` and `brew cask info` are separate commands that produce different output. Ideally all of Homebrew's commands that reference a formula would also be able to reference a cask and produce helpful output (although `brew install` and `brew cask install` should remain separate). This will make it easier for users to have casks recommended when there is not a formula (and vice-versa).
 
@@ -46,7 +46,7 @@ Expected outcome: several new `brew` commands should produce helpful output dire
 
 ### Add license metadata to Homebrew/homebrew-core formulae
 #### Skills Required: Ruby, Homebrew usage, basic understanding of OSS licensing
-#### Mentor: @MikeMcQuaid
+#### Mentor: @MikeMcQuaid, @chenrui333
 #### Difficulty: Medium
 Homebrew formulae do not have license metadata. For this to be included in Homebrew a `license` DSL would need to be added to Homebrew/brew and all relevant metadata would need to be added for Homebrew/homebrew-core formulae before they could be merged. Additionally, automated tests in `brew audit` should be added to verify this metadata matches what GitHub detects.
 
