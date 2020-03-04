@@ -54,6 +54,16 @@ Expected outcome: A formula `license` DSL is added and used in homebrew-core. `b
 
 ----
 
+### Create more GitHub Actions for Homebrew
+#### Skills Required: JavaScript (or another GitHub Actions language), Homebrew usage, GitHub Actions
+#### Mentor: @MikeMcQuaid,
+#### Difficulty: Medium
+Homebrew uses GitHub Actions on (almost) all repositories within the Homebrew organisation (for example: Homebrew/brew, Homebrew/homebrew-bundle, Homebrew/homebrew-aliases). There's a lot of repetition between these that could be improved with dedicated GitHub Actions. Additionally, repeated actions like "run brew style" could have annotations to improve their output.
+
+Expected outcome: More actions are added to the Homebrew/actions repository to support Homebrew or tap workflows.
+
+----
+
 ### Add support for type checking using Sorbet
 #### Skills Required: Ruby, Homebrew usage, statically typed programming languages
 #### Mentor: @mistydemeo, @issyl0
