@@ -44,16 +44,6 @@ Expected outcome: several new `brew` commands should produce helpful output dire
 
 ----
 
-### Add license metadata to Homebrew/homebrew-core formulae
-#### Skills Required: Ruby, Homebrew usage, basic understanding of OSS licensing
-#### Mentor: @MikeMcQuaid, @chenrui333
-#### Difficulty: Medium
-Homebrew formulae do not have license metadata. For this to be included in Homebrew a `license` DSL would need to be added to Homebrew/brew and all relevant metadata would need to be added for Homebrew/homebrew-core formulae before they could be merged. Additionally, automated tests in `brew audit` should be added to verify this metadata matches what GitHub detects.
-
-Expected outcome: A formula `license` DSL is added and used in homebrew-core. `brew audit` verifies this DSL is correct.
-
-----
-
 ### Create more GitHub Actions for Homebrew
 #### Skills Required: JavaScript (or another GitHub Actions language), Homebrew usage, GitHub Actions
 #### Mentor: @MikeMcQuaid,
