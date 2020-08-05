@@ -31,26 +31,15 @@ https://github.com/blog/2312-how-to-run-a-google-summer-of-code-project-on-githu
 
 Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the macOS and Linux operating systems and uses Git and GitHub for version control and updates. You do not need to have used any of these before but must have access to a Mac (unless working on Linux-specific features) and be willing to learn Ruby, Git and GitHub.
 
-## 2020 Ideas
-These are suggestions that would make good Google Summer of Code projects. Feel free to open an issue if you wish to discuss or propose your own idea.
+## 2021 Ideas
+TODO:
 
-### Improve integration with Homebrew Cask
-#### Skills Required: Ruby, Homebrew usage, Homebrew Cask usage, usability-focused thinking
-#### Mentor: @MikeMcQuaid, @chenrui333
-#### Difficulty: Easy
-Although Homebrew and Homebrew Cask have been merged the two projects are not fully integrated. For example, `brew info` and `brew cask info` are separate commands that produce different output. Ideally all of Homebrew's commands that reference a formula would also be able to reference a cask and produce helpful output (although `brew install` and `brew cask install` should remain separate). This will make it easier for users to have casks recommended when there is not a formula (and vice-versa).
-
-Expected outcome: several new `brew` commands should produce helpful output directing the user to casks or just show cask information.
+### Title
+#### Skills Required: ...
+#### Mentors: ...
+#### Difficulty: ...
 
 ----
-
-### Create more GitHub Actions for Homebrew
-#### Skills Required: JavaScript (or another GitHub Actions language), Homebrew usage, GitHub Actions
-#### Mentor: @MikeMcQuaid,
-#### Difficulty: Medium
-Homebrew uses GitHub Actions on (almost) all repositories within the Homebrew organisation (for example: Homebrew/brew, Homebrew/homebrew-bundle, Homebrew/homebrew-aliases). There's a lot of repetition between these that could be improved with dedicated GitHub Actions. Additionally, repeated actions like "run brew style" could have annotations to improve their output.
-
-Expected outcome: More actions are added to the Homebrew/actions repository to support Homebrew or tap workflows.
 
 ### Other Ideas
 You can also get inspiration from [open `help wanted` issues on Homebrew/brew](https://github.com/homebrew/brew/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) and [open `help wanted` issues on Homebrew/homebrew-core](https://github.com/homebrew/homebrew-core/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22). Please discuss any of these with us before submission to maximise your chances of being accepted.
