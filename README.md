@@ -54,7 +54,7 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Difficulty: Medium
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/49
 
-### Autobumping resources
+### Improve behaviour of `HOMEBREW_INSTALL_FROM_API`
 #### Length: 350 hours
 #### Skills Required: ruby
 #### Mentors: Rylan, Mike
