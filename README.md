@@ -31,13 +31,42 @@ https://github.com/blog/2312-how-to-run-a-google-summer-of-code-project-on-githu
 
 Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the macOS and Linux operating systems and uses Git and GitHub for version control and updates. You do not need to have used any of these before but must have access to a Mac (unless working on Linux-specific features) and be willing to learn Ruby, Git and GitHub.
 
-## 2021 Ideas
-TODO:
+## 2022 Ideas
 
-### Title
-#### Skills Required: ...
-#### Mentors: ...
-#### Difficulty: ...
+### Deduplicate and cleanup GitHub Actions
+#### Length: 175 hours
+#### Skills Required: shell scripting, ruby
+#### Mentors: Misty
+#### Difficulty: Medium
+#### Homebrew issue: https://github.com/Homebrew/brew/issues/11101
+
+### Speed up Homebrew
+#### Length: 350 hours
+#### Skills Required: ruby
+#### Mentors: Misty
+#### Difficulty: Hard
+#### Homebrew issue: https://github.com/Homebrew/brew/issues/10508
+
+### Autobumping resources
+#### Length: 175 hours
+#### Skills Required: ruby
+#### Mentors: Nanda
+#### Difficulty: Medium
+#### Homebrew issue: https://github.com/Homebrew/gsoc/issues/49
+
+### Improve behaviour of `HOMEBREW_INSTALL_FROM_API`
+#### Length: 350 hours
+#### Skills Required: ruby
+#### Mentors: Misty
+#### Difficulty: Medium
+#### Homebrew issue: https://github.com/Homebrew/gsoc/issues/45
+
+### Replacing Google Analytics
+#### Length: 350 hours
+#### Skills Required: ruby, database
+#### Mentors: Misty
+#### Difficulty: Medium
+#### Homebrew issue: https://github.com/Homebrew/gsoc/issues/46
 
 ----
 
