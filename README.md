@@ -36,14 +36,14 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 ### Deduplicate and cleanup GitHub Actions
 #### Length: 175 hours
 #### Skills Required: shell scripting, ruby
-#### Mentors: Mike, Misty
+#### Mentors: Misty
 #### Difficulty: Medium
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/11101
 
 ### Speed up Homebrew
 #### Length: 350 hours
 #### Skills Required: ruby
-#### Mentors: Mike, Misty
+#### Mentors: Misty
 #### Difficulty: Hard
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/10508
 
@@ -57,14 +57,14 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 ### Improve behaviour of `HOMEBREW_INSTALL_FROM_API`
 #### Length: 350 hours
 #### Skills Required: ruby
-#### Mentors: Rylan, Mike
+#### Mentors: Misty
 #### Difficulty: Medium
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/45
 
 ### Replacing Google Analytics
 #### Length: 350 hours
 #### Skills Required: ruby, database
-#### Mentors: Mike, Misty
+#### Mentors: Misty
 #### Difficulty: Medium
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/46
 
