@@ -36,14 +36,14 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 ### Deduplicate and cleanup GitHub Actions
 #### Length: 175 hours
 #### Skills Required: shell scripting, ruby
-#### Mentors: Misty
+#### Mentors: Thierry
 #### Difficulty: Medium
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/11101
 
 ### Speed up Homebrew
 #### Length: 350 hours
 #### Skills Required: ruby
-#### Mentors: Misty
+#### Mentors: Thierry
 #### Difficulty: Hard
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/10508
 
