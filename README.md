@@ -36,8 +36,10 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 ### Deduplicate and cleanup GitHub Actions
 #### Length: 175 hours
 #### Skills Required: shell scripting, ruby
-#### Mentors: Thierry
 #### Difficulty: Medium
+#### Description
+Homebrew makes extensive use of GitHub Actions. Some of our workflows are very similar to each other and could be reused within the Homebrew organisation and community. This project will involve learning about Actions workflows in order to find ways to more efficiently use them across our projects.
+#### Mentors: Thierry
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/11101
 
 ### Speed up Homebrew
@@ -45,6 +47,8 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Skills Required: ruby
 #### Mentors: Thierry
 #### Difficulty: Hard
+#### Description
+Homebrew's boot time is slower than it needs to be. Some of our dependencies, in particular ActiveSupport, may be the cause of this. The goal of this project is to improve Homebrew's boot time without negatively impacting the project.
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/10508
 
 ### Autobumping resources
@@ -52,6 +56,8 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Skills Required: ruby
 #### Mentors: Nanda
 #### Difficulty: Medium
+#### Description
+Many Homebrew packages use resources, a special kind of package dependency. While we have tools which automatically upgrade packages to new versions, this feature doesn't work with resources. This project will enhance our existing `livecheck` feature.
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/49
 
 ### Improve behaviour of `HOMEBREW_INSTALL_FROM_API`
@@ -59,6 +65,8 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Skills Required: ruby
 #### Mentors: Misty
 #### Difficulty: Medium
+#### Description
+This project will enhance an existing Homebrew feature which allows users to install Homebrew packages without having a local copy of the Homebrew package git repositories checked out. Contributors will learn about the features of the existing beta feature and work on enhancing it.
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/45
 
 ### Replacing Google Analytics
@@ -66,6 +74,8 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Skills Required: ruby, database
 #### Mentors: Misty
 #### Difficulty: Medium
+#### Description
+Homebrew currently uses Google Analytics to understand which formulae are used by our users. We would like to replace this with something open-source and which only collects as much data as we need.
 #### Homebrew issue: https://github.com/Homebrew/gsoc/issues/46
 
 ----
