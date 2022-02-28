@@ -39,7 +39,7 @@ Homebrew is written mostly in Ruby (with small amounts of Bash), runs on the mac
 #### Difficulty: Medium
 #### Description
 Homebrew makes extensive use of GitHub Actions. Some of our workflows are very similar to each other and could be reused within the Homebrew organisation and community. This project will involve learning about Actions workflows in order to find ways to more efficiently use them across our projects.
-#### Mentors: Thierry
+#### Mentors: Thierry, Rui
 #### Homebrew issue: https://github.com/Homebrew/brew/issues/11101
 
 ### Speed up Homebrew
@@ -72,7 +72,7 @@ This project will enhance an existing Homebrew feature which allows users to ins
 ### Replacing Google Analytics
 #### Length: 350 hours
 #### Skills Required: ruby, database
-#### Mentors: Misty
+#### Mentors: Misty, Rui
 #### Difficulty: Medium
 #### Description
 Homebrew currently uses Google Analytics to understand which formulae are used by our users. We would like to replace this with something open-source and which only collects as much data as we need.
