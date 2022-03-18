@@ -12,6 +12,8 @@ In your application tell us:
 
 Homebrew is actively seeking to diversify our contributors and especially welcome applications from women from all backgrounds and people of colour.
 
+If you have general questions about Homebrew, feel free to reach out to our Discussions forum: https://github.com/Homebrew/discussions/discussions
+
 ### Google Summer of Code
 Please read and apply via https://summerofcode.withgoogle.com/get-started/.
 
